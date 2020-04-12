@@ -3,7 +3,7 @@ class Student {
 	String index;
 	String firstName;
 	String lastName;
-	List<int> grades;
+	List<Integer> grades;
 	//TODO constructor
 	Student(String index, String firstname, String lastName){
 		this.index=index;
@@ -36,11 +36,11 @@ class Student {
 		this.lastName = lastName;
 	}
 
-	public List<int> getGrades() {
+	public List<Integer> getGrades() {
 		return grades;
 	}
 
-	public void setGrades(List<int> grades) {
+	public void setGrades(List<Integer> grades) {
 		this.grades = grades;
 	}
 
@@ -50,7 +50,7 @@ class Student {
 				grades) {
 			sum+=grade;
 		}
-		return grades/(grades.size()*1.0);
+		return sum/(grades.size()*1.0);
 	}
 
 	public int ECTSCredits() {
